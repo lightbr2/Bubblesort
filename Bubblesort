@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+public class ClasseBubbleSort {
+    public static void main(String[] args) {
+        Scanner tcl = new Scanner(System.in);
+        int aux = 0;
+        int vetor[] = new int[10];
+
+        for (int x = 0; x < vetor.length; x++) {
+            vetor[x] = tcl.nextInt();
+        }
+  
+        for (int x = 0; x < vetor.length; x++) {
+            for (int y = 0; y < vetor.length; y++) {
+                if (vetor[x] < vetor[y]) {
+                    aux = vetor[x];
+                    vetor[x] = vetor[y];
+                    vetor[y] = aux;
+                }
+            }
+        }
+
+        for (int x = 0; x < vetor.length; x++) {
+            System.out.println(vetor[x]);
+        }
+    }
+
+}
