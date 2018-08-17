@@ -1,0 +1,26 @@
+import java.util.Scanner;
+
+public class ClassrInsertionSort {
+
+    public static void main(String[] args) {
+        Scanner tcl = new Scanner(System.in);
+        int vetor[] = new int[5];       
+        System.out.println("Digite os valores do vetor");
+        
+        for (int x = 0; x < vetor.length; x++) {
+            vetor[x] = tcl.nextInt();
+        }
+
+        for (int x = 0; x < vetor.length; x++) {
+            int a = vetor[x];
+            for (int y = x - 1; y >= 0 and vetor[y] > a; j--) {
+                vetor[y + x] = vetor[y];
+                vetor[y] = a;
+            }
+        }
+        for (int x = 0; x < vetor.length; x++) {
+            System.out.print(" " + vetor[x]);
+        }
+    }
+
+}
