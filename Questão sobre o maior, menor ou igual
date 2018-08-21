@@ -1,0 +1,25 @@
+import java.util.Scanner;
+
+
+
+ class Dcoder
+ { 
+	public static void main(String args[])
+ 	{ 
+
+		Scanner tcl = new Scanner(System.in);
+		int x = tcl.nextInt();
+		int y = tcl.nextInt();
+		
+		if(x < y){
+			System.out.println("y é maior");
+			}
+		if(x == y){
+			System.out.println("são iguais");
+		}
+		if(x > y){
+			System.out.println(" x é maiot");
+		}
+
+ 	}
+ }
