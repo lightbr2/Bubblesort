@@ -1,0 +1,31 @@
+import java.util.Scanner;
+
+
+
+ class Dcoder
+ { 
+	public static void main(String args[])
+ 	{ 
+
+		Scanner tcl = new Scanner(System.in);
+
+        int a = tcl.nextInt();
+        int b = tcl.nextInt();
+        int c = tcl.nextInt();
+        
+        int delta = b^2 - 4*a*c;
+        int x1 = -1*b - (delta)^1/2;
+        int x2 = b + (delta)^1/2;
+        
+        System.out.println(x1);
+        System.out.println(x2);
+        
+        if(a>0){
+        	System.out.println("concavidade para cima");
+        if(a<0){
+        	System.out.println("concavidade para baixo");
+          }
+        }
+
+  	}
+ }
